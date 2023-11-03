@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Clock App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="publisher" content="Achraf Rejouan" />
+    <meta name="copyright" content="github.com/Achraf-Rejouan" />
+    <meta name="page-topic" content="Digital Clock" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="updateClock(); setInterval(()=>{updateClock()}, 1000)">
+    <div class="container">
+      <div class="conClock">
+        <div class="fullClock">
+          <h1 id="clock"></h1>
+          <p id="dayStatus"></p>
+          <p id="currentDay"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Main JS File -->
+    <script src="script.js"></script>
+  </body>
+</html>
